@@ -18,7 +18,7 @@ Base dimensional: 4 px; intervalos principais: 8 px. Bordas de 1 px e dimensões
 - Cards de conteúdo: 2 colunas a partir de 768 px e 1 abaixo. Depoimentos: 3 em desktop e 1 em tablet/celular. Altura natural do conteúdo, sem min-height artificial.
 - Exceção funcional: matriz de serviços conserva divisórias de 1 px em vez de gaps de cards. Não é um bento.
 - Hero: padding superior 64 px (40 no celular); rodapé interno com 24 px. Rodapé: blocos de 32 e 24 px. Demais seções usam a família regular.
-- `#modelo` e `#dinamica` são seções independentes, com heading, conteúdo e padding próprios. A primeira apresenta os três fundamentos da página 2; a segunda contém a dinâmica econômica das páginas 3 e 7. Separador neutro entre elas.
+- `#modelo` e `#dinamica` são seções independentes, com heading, conteúdo e padding próprios. A primeira explica o ativo adquirido, sua finalidade e administração; a segunda explica a origem da receita, as condições contratuais e a possibilidade de nova locação. Separador neutro entre elas.
 
 ## Tipografia e controles
 
@@ -41,3 +41,7 @@ Validar a página toda, headings, tabela, menu/FAQ e navegação, antes/depois n
 - Menu abre e fecha ao navegar no celular; FAQ expande. Na visita normal o inspetor não existe no DOM. Em `?grid=1`, mede corretamente margem 40, container 1200 e 12 colunas no viewport 1280, preservando as alturas das seções.
 - Teste Python do visor e fixtures do inspetor nos modos ao vivo, captura e seletor inválido: PASS.
 - Limite: o atalho de zoom do navegador integrado não alterou a escala. Zoom nativo de 200% não foi verificado; não confundir os testes de largura com esse teste. Compatibilidade não foi estendida a outros navegadores.
+
+## Revisão editorial
+
+Copy reescrita para despertar interesse pela apresentação, mantendo o sistema visual. Removidas seções repetitivas `#fundamentos` e `#possibilidades`; estimativa em dois cards, sem comparação entre produtos. Os registros de 40 headings e tabela acima correspondem à versão anterior.

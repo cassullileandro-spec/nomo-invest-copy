@@ -4,21 +4,21 @@ Página para revisão com o cliente, em preto suave, branco e cinza, com espaço
 
 A única fonte editorial é `Apresentação No.Mo Invest.pdf`, de 17 páginas, fornecida pelo cliente. Seções anotadas no HTML com `data-source-pages`, sem exibir essas referências na página. Interface e chamadas de navegação adaptadas para a web.
 
-## Correspondência com o documento
+## Direção editorial
 
-- Abertura: páginas 1 e 17.
-- Modelo: página 2, em seção independente.
-- Dinâmica econômica: páginas 3 e 7, em outra seção.
-- Setores: página 6.
-- Características dos módulos: páginas 4 e 8.
-- Como funciona e ciclo: páginas 9 a 12.
-- Cinco pilares: página 5.
-- Administração: páginas 10 e 16.
-- Estimativas: página 13, incluindo os números inseridos como imagem no PDF e todas as ressalvas de estimativas e comparação. Inclusão autorizada para esta versão de aprovação; valores e premissas continuam sujeitos a validação.
-- Fontes de retorno e Selic: página 14.
-- FAQ: página 16.
-- Depoimentos: transcrição dos três relatos da página 15, com a ressalva do material.
-- Contatos e grupo: páginas 3 e 17.
+O site apresenta a proposta e desperta interesse em receber a apresentação; não reproduz o deck página por página. Fatos e condições vêm do PDF, com redação própria para a web. Depoimentos permanecem literais.
+
+- Abertura: benefício e funcionamento em poucas linhas, com ticket da página 9.
+- Modelo e dinâmica: seções independentes; o que se adquire e de onde pode vir a receita (páginas 2, 5, 7, 9, 12 e 14).
+- Setores e módulos: possibilidades de uso, reutilização e limites (páginas 4 a 8).
+- Jornada: aquisição, administração e vínculo com a locação (páginas 9 a 12).
+- Operação: responsabilidades da Nomad (páginas 10 e 16).
+- Estimativas: faixa de ~1,5% a 2,0% ao mês da página 13, com condições e ressalvas. Comparações com outros produtos ficaram para a apresentação; não se sugere equivalência de risco ou superioridade.
+- Depoimentos: três relatos literais da página 15 e respectiva ressalva.
+- FAQ: retorno, manutenção e saída (página 16).
+- Conversão: solicitação da apresentação pelo WhatsApp da página 17, com mensagem preenchida. O visitante decide enviar; o site não envia mensagens nem entrega o PDF automaticamente.
+
+Os blocos repetidos de cinco pilares e comparação com a Selic foram absorvidos pela narrativa principal. O PDF permanece como material de aprofundamento. Não foram criadas promessas, garantias, estatísticas, prazos de atendimento ou argumentos sem base documental.
 
 A página 10 contém uma divergência: título “A Modubras administra” e corpo identificando a Nomad. A página usa “Nomad”, como no corpo, no ciclo da página 12 e no FAQ da página 16. Essa divergência permanece para confirmação do cliente.
 
