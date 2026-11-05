@@ -1,6 +1,6 @@
 # No.Mo Invest — aprovação da copy
 
-Página para revisão com o cliente, em preto suave, branco e cinza, com espaços reservados para imagens.
+Página para revisão com o cliente, com a logo original e as cores da marca: amarelo #F7D104, grafite #202020, branco e cinza. Espaços reservados para imagens preservados.
 
 A fonte editorial da narrativa é `Apresentação No.Mo Invest.pdf`, de 17 páginas, fornecida pelo cliente. O simulador utiliza também `TABELA VALORES NO.MO INVEST.pdf`, de 14 páginas, enviado depois pelo usuário. Seções anotadas no HTML com `data-source-pages`, sem exibir essas referências na página. Interface e chamadas de navegação adaptadas para a web.
 

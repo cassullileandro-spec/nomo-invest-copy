@@ -12,7 +12,7 @@ Aplicar a skill `layout-grid-responsivo` nas alterações futuras. A instrução
 
 Base de 4 px, ritmo principal de 8 px. Bordas de 1 px e proporções fluidas são exceções intencionais. Referência fixa Y=0, linhas fortes de 64 px e finas de 8 px. Não forçar letras ou caixas a coincidir com toda linha.
 
-Título/texto: 16 px. Texto/ação: 24 px. Cabeçalho/coleção: 48 px (32 no celular). Cards com raio 24 px, mídia interna 16 px; no celular, 20 e 12 px. Paleta preto suave, branco e cinza. Placeholder neutro com descrição acessível, sem legenda visual pequena.
+Título/texto: 16 px. Texto/ação: 24 px. Cabeçalho/coleção: 48 px (32 no celular). Cards com raio 24 px, mídia interna 16 px; no celular, 20 e 12 px. Paleta da marca: amarelo #F7D104 do logo original, grafite #202020, branco e cinza. Amarelo suave #FFF4B8 é uma superfície derivada; textos escuros sobre amarelo. Logo original no cabeçalho (220 px, 182 no celular) e rodapé, preservando proporção. Placeholder neutro com descrição acessível, sem legenda visual pequena.
 
 ## Composição
 

@@ -31,4 +31,8 @@ Mapa de imagens futuras: panorama de módulo em operação; detalhe do módulo/d
 
 ## Acabamento
 
-Preto suave, branco e cinza; superfícies amplas em vez de contornos por toda parte. Raio 24 px nos cards, 16 px nas mídias internas e formato de cápsula nos botões de 40 px. Sem tags numeradas de seção, ícones decorativos ou letras miúdas. Grid, tipografia e responsividade em `GRID.md`.
+Amarelo #F7D104, grafite #202020, branco e cinza; superfícies amplas em vez de contornos por toda parte. Raio 24 px nos cards, 16 px nas mídias internas e formato de cápsula nos botões de 40 px. Sem tags numeradas de seção, ícones decorativos ou letras miúdas. Grid, tipografia e responsividade em `GRID.md`.
+
+## Identidade da marca
+
+Logo original `Logo No.Mo Branco.png`, copiado sem alterações para `assets/logo-nomo-branco.png`. Amarelo #F7D104 confirmado nos pixels opacos do arquivo. Não foi fornecido manual de marca; o tom claro #FFF4B8 é uma derivação de interface. Botões com texto grafite; amarelo nos destaques sobre fundo escuro. Placeholders permanecem neutros.
