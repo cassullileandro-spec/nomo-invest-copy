@@ -7,7 +7,8 @@ A única fonte editorial é `Apresentação No.Mo Invest.pdf`, de 17 páginas, f
 ## Correspondência com o documento
 
 - Abertura: páginas 1 e 17.
-- Modelo e dinâmica econômica: páginas 2, 3 e 7.
+- Modelo: página 2, em seção independente.
+- Dinâmica econômica: páginas 3 e 7, em outra seção.
 - Setores: página 6.
 - Características dos módulos: páginas 4 e 8.
 - Como funciona e ciclo: páginas 9 a 12.
@@ -27,3 +28,7 @@ Os sete espaços de imagem (abertura e seis setores) são placeholders, não fot
 
 HTML, CSS e JavaScript estáticos, sem dependências. GitHub Pages publica a raiz da branch `main`.
 Prévia local: `python3 -m http.server 4173`.
+
+## Regra de layout
+
+Seguir [GRID.md](GRID.md) em toda alteração visual. Revisão com guias: acrescentar `?grid=1` ao endereço da página. A visita normal não carrega o inspetor.
