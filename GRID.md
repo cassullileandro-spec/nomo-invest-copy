@@ -1,59 +1,49 @@
 # Contrato de layout No.Mo Invest
 
-Regra: aplicar a skill `layout-grid-responsivo` nas alterações futuras. Ela não substitui decisões mais recentes do usuário. Código publicado: este diretório; sem reconstrução em outra plataforma.
+Aplicar a skill `layout-grid-responsivo` nas alterações futuras. A instrução mais recente do usuário prevalece. Fonte de publicação: este diretório, GitHub Pages. Direção e mapa de imagens em [DESIGN.md](DESIGN.md).
 
 ## Sistema efetivo
 
-| Faixa CSS | Container | Colunas-guia | Gutter | Gap dos cards | Padding dos cards | Padding de seção |
-|---|---|---|---|---|---|---|
-| Até 767 px | largura disponível menos 32 px | 4 | 16 px | 16 px | 16 px | 64 px por lado |
-| 768–1023 px | largura disponível menos 48 px | 8 | 24 px | 24 px | 24 px | 80 px por lado |
-| 1024 px ou mais | min(1200 px, largura disponível menos 64 px) | 12 | 24 px | 24 px | 24 px | 96 px por lado |
+| Faixa CSS | Container | Colunas-guia | Gutter / gap dos cards | Padding dos cards | Padding de seção |
+|---|---|---|---|---|---|
+| Até 767 px | largura menos 32 px | 4 | 16 px | 16 px | 64 px por lado |
+| 768–1023 px | largura menos 48 px | 8 | 24 px | 24 px | 80 px por lado |
+| 1024 px ou mais | min(1200 px, largura menos 64 px) | 12 | 24 px | 24 px | 96 px por lado |
 
-Base dimensional: 4 px; intervalos principais: 8 px. Bordas de 1 px e dimensões fluidas proporcionais são exceções intencionais. Referência horizontal fixa Y=0, linhas fortes de 64 px, finas de 8 px. Não forçar caixas ou letras a coincidir com toda linha.
+Base de 4 px, ritmo principal de 8 px. Bordas de 1 px e proporções fluidas são exceções intencionais. Referência fixa Y=0, linhas fortes de 64 px e finas de 8 px. Não forçar letras ou caixas a coincidir com toda linha.
 
-- Título/texto e parágrafos: 16 px. Texto/ação: 24 px. Cabeçalho/coleção: 48 px (32 no celular).
-- Texto livre alinhado ao container. Hero: 7/5 colunas em desktop. Blocos editoriais: 5 colunas de texto e 6 colunas de conteúdo, este iniciando na coluna 7. Split headings: 6/5, texto na coluna 8. Tablets recompõem esses spans; celular empilha mantendo a ordem do DOM.
-- Setores: 3 cards a partir de 1024 px, 2 de 600 a 1023 px e 1 abaixo de 600 px. O nome do setor permanece legível, sem dividir palavras artificialmente.
-- Cards de conteúdo: 2 colunas a partir de 768 px e 1 abaixo. Depoimentos: 3 em desktop e 1 em tablet/celular. Altura natural do conteúdo, sem min-height artificial.
-- Exceção funcional: matriz de serviços conserva divisórias de 1 px em vez de gaps de cards. Não é um bento.
-- Hero: padding superior 64 px (40 no celular); rodapé interno com 24 px. Rodapé: blocos de 32 e 24 px. Demais seções usam a família regular.
-- `#modelo` e `#dinamica` são seções independentes, com heading, conteúdo e padding próprios. A primeira explica o ativo adquirido, sua finalidade e administração; a segunda explica a origem da receita, as condições contratuais e a possibilidade de nova locação. Separador neutro entre elas.
+Título/texto: 16 px. Texto/ação: 24 px. Cabeçalho/coleção: 48 px (32 no celular). Cards com raio 24 px, mídia interna 16 px; no celular, 20 e 12 px. Paleta preto suave, branco e cinza. Placeholder neutro com descrição acessível, sem legenda visual pequena.
+
+## Composição
+
+- Hero: título em 7 colunas, introdução em 4 começando na coluna 9; tablet 5/3, celular empilhado. Panorama abaixo. Padding superior 64 px (40 no celular), tira inferior 24 px. Rodapé com blocos de 32 e 24 px; demais seções seguem o padding regular.
+- Modelo: card vertical de 4 colunas ocupa duas linhas; dois horizontais de 8 colunas. No tablet, duas colunas iguais; no celular, três cards empilhados. `#modelo` e `#dinamica` permanecem seções independentes.
+- Dinâmica: texto em 5 colunas e sequência em 6, começando na coluna 7. Tablet 4/4, celular empilhado. Círculos indicam passos, não tags de seção.
+- Cabeçalhos divididos: 6/5 colunas, texto começando na coluna 8; tablet 4/4, celular empilhado. Cabeçalhos centrados limitados a 792 px, alinhados à esquerda no celular.
+- Aplicações: três colunas no desktop, duas de 600 a 1023 px e uma abaixo de 600. Deslocamento editorial de 40 px na coluna central do desktop, 32 px nos pares do tablet, zero no celular. Proporções iguais dentro de cada faixa.
+- Módulos: mídia em 7 colunas e duas características em 5; tablet 4/4; celular empilhado. Mídia acompanha a altura natural do conjunto, sem esticar texto.
+- Jornada: três passos equivalentes no desktop, linhas internas compartilhadas por subgrid para alinhar títulos e descrições. Tablet e celular usam sequência vertical. Círculos de 40 px (32 no celular).
+- Operação: mídia em 5 colunas, seis serviços em 7; tablet 3/5; celular empilhado. Serviços em duas colunas a partir de 600 px e uma abaixo. Gap interno 16 px.
+- Estimativas: dois cards iguais, uma coluna no celular. Padding interno 32 px no desktop e tablet, 24 no celular. Contexto junto dos valores em corpo legível.
+- Simulador: configuração e resultado em 6/6 colunas no desktop, 4/4 no tablet, empilhados no celular. Formulário inclui prévia de mídia. Padding 32/24/16 px. Campos em duas colunas no desktop e de 600 a 767 px; uma nas demais faixas. Alturas naturais, sem truncar valores ou estados condicionais.
+- Depoimentos: três cards no desktop, um por linha no tablet/celular; assinatura alinhada na base. Círculos neutros decorativos não representam fotos reais.
+- FAQ: texto em 5 colunas, perguntas em 6 a partir da coluna 7; tablet 3/5; celular empilhado. Fechamento centralizado com uma ação principal.
 
 ## Tipografia e controles
 
-Arial/Helvetica preservadas. Papéis explícitos: H1 56/64 px em desktop e 64/72 a partir de 1440, 48/56 no tablet, 40/48 no celular. H2 48/56, 40/48 e 32/40 respectivamente. Títulos de item 24/32. Corpo 16/24 e auxiliares 14/24. Notas em letra miúda foram removidas por solicitação do usuário; não reintroduzir legendas de 12 px. Condições essenciais ficam na copy principal em 16/24.
+Arial/Helvetica. H1 56/64 px no desktop e 64/72 a partir de 1440; tablet 48/56; celular 40/48. H2 48/56, 40/48 e 32/40. Títulos de itens 24/32. Corpo 16/24, auxiliares 14/24. Depoimentos e responsabilidades 20/28. Valores do simulador 32/40; estimativa 32/40 (28/36 no celular).
 
-Botões e CTAs: mínimo externo 40 px, rótulo 14/24, gap 8, padding horizontal 16, borda 1, padding vertical 7, raio 6. No zoom ou caso de quebra legítima, podem crescer; não truncar. Ações empilham conforme largura. O CTA do cabeçalho é omitido abaixo de 600 px para caber com marca e menu; os CTAs do conteúdo permanecem disponíveis.
+Botões e CTAs: mínimo externo 40 px, rótulo 14/24, gap 8, borda 1 e padding vertical 7. Cápsula com seta circular de 24 px. Seletores nativos 40 px e texto 16/24. Controles podem crescer com zoom ou quebra legítima; nunca truncar. CTA do cabeçalho omitido abaixo de 600 px; CTAs no conteúdo continuam disponíveis.
 
-Títulos com quebra automática e `text-wrap: balance`; não reduzir uma fonte isolada para encaixar o texto. `text-box: trim-both cap alphabetic` é melhoria progressiva compartilhada em títulos, parágrafos e nomes de depoimentos. Fallback natural em navegadores sem suporte. Não recortar acentos e descendentes.
+Títulos com `text-wrap: balance`, sem redução isolada de fonte para caber. Quebra editorial após “Um ativo real.” e espaço inseparável em “em andamento” para prevenir a viúva observada em 320 px. `text-box: trim-both cap alphabetic` como melhoria progressiva em títulos, parágrafos e assinaturas, com fallback natural. Não reintroduzir letras miúdas ou tags numeradas de seção.
 
-## Inspeção e publicação
+## Revisão realizada em 05/11/2026
 
-`?grid=1` ativa o inspetor da skill, apenas em revisão. Colunas discretas, linhas fortes e limites/padding de seções; demais camadas desligadas. Ele não altera o conteúdo e não carrega na visita normal. A referência é calibrada no carregamento; após mudar a largura, recarregar a revisão para recalibrar ao breakpoint antes de fixar as guias.
+Versão anterior recuperável: `78179c131acda7754738fc7161fb0c0574cfd347`. Evidências locais em `../output/redesign/`.
 
-Validar a página toda, headings, tabela, menu/FAQ e navegação, antes/depois nos mesmos viewports, ambos os lados de 600/768/1024 e zoom. Registrar larguras efetivamente testadas. O commit `12353c95bdfcd66918c8ff8997436a22c08d1a2d` preserva a versão anterior. Capturas locais em `../output/grid/`. Versionar CSS/JS alterados e conferir o link publicado.
-
-## Verificação realizada em 05/11/2026
-
-- Geometria e linhas de todos os 40 headings: 320, 390, 599, 600, 767, 768, 1023, 1024, 1280 e 1440 px. Sem overflow horizontal e sem palavra única na última linha de headlines multilinha. CTAs medidos em 40 px, fonte/entrelinha 14/24.
-- Página inteira, transições e rodapé inspecionados visualmente em capturas de 1280 e 390 px, com antes/depois no mesmo viewport. Aplicado NBSP apenas em “Diferentes aplicações.” para corrigir a viúva demonstrada no desktop.
-- Menu abre e fecha ao navegar no celular; FAQ expande. Na visita normal o inspetor não existe no DOM. Em `?grid=1`, mede corretamente margem 40, container 1200 e 12 colunas no viewport 1280, preservando as alturas das seções.
-- Teste Python do visor e fixtures do inspetor nos modos ao vivo, captura e seletor inválido: PASS.
-- Limite: o atalho de zoom do navegador integrado não alterou a escala. Zoom nativo de 200% não foi verificado; não confundir os testes de largura com esse teste. Compatibilidade não foi estendida a outros navegadores.
-
-## Revisão editorial
-
-Copy reescrita para despertar interesse pela apresentação, mantendo o sistema visual. Removidas seções repetitivas `#fundamentos` e `#possibilidades`; estimativa em dois cards, sem comparação entre produtos. Os registros de 40 headings e tabela acima correspondem à versão anterior.
-
-## Simulador
-
-Reutiliza o grid editorial 5/6 colunas e empilha no celular. Seletores nativos de 40 px com texto 16/24 para legibilidade e evitar zoom automático em celulares; rótulos 14/24. Totais 32/40. Condições e limites em 16/24, sem letras miúdas. Conteúdo de resultado tem altura natural. `hidden` sempre retira o elemento da composição, inclusive nos wrappers com grid.
-
-Verificação da revisão editorial e simulador: 31 headings e controles conferidos em 320, 390, 599, 600, 767, 768, 1023, 1024, 1280 e 1440 px, sem overflow ou viúvas e CTAs de 40 px. Interações de tipo, condição, quantidade, situação e menu mobile verificadas. Cálculos: 50 cenários mais limites e entradas inválidas. Zoom nativo e outros navegadores continuam não verificados.
-
-## Refinamento da seção modelo
-
-Versão anterior recuperável: `21133407ba6c3df5302efce69596b3ebdf084984`. O cabeçalho de `#modelo` passa a usar a composição existente de 6/5 colunas, com texto na coluna 8. Cards: três colunas em desktop, com linhas compartilhadas por subgrid para alinhar as descrições. A diferença observada de 32 px entre as descrições em 1024 px foi eliminada. Gap horizontal 24 px e intervalo interno título/texto 16 px, sem alturas fixas.
-
-De 768 a 1023 px, três cards empilhados, cada um com título e descrição lado a lado; abaixo de 768 px, conteúdo em uma coluna. Copy e seção `#dinamica` preservadas. Verificação em 320, 390, 767, 768, 1023, 1024, 1280 e 1440 px: sem overflow ou palavras isoladas no fim dos títulos. Inspeção visual em 390, 768 e 1280 px e guias em 1280 px. Outros navegadores e zoom nativo não foram verificados nesta revisão. Capturas `modelo-grid-*` em `../output/grid/`.
+- Geometria e linhas dos 31 headings em 320, 390, 599, 600, 767, 768, 1023, 1024, 1280 e 1440 px. Sem overflow horizontal. Uma viúva em 320 px corrigida e revalidada. CTAs em 40 px com rótulos 14/24.
+- Página completa inspecionada em 390, 768 e 1440 px, incluindo transições e rodapé. Antes/depois em 390 e 1440 px. Parágrafos das três etapas compartilham o mesmo eixo vertical no desktop.
+- Inspetor `?grid=1`: em 1440 px, container 1200, margens 120, 12 colunas, gaps 24, padding regular 96. Visita normal não carrega o inspetor. Recarregar após mudar a largura para recalibrar as guias.
+- Menu mobile abre e fecha ao navegar. FAQ expande. Simulador verificado com dois escritórios nível 1 (R$ 92.000 / R$ 2.132), módulos novos sem renda e WC sob consulta, e cinco sanitários nível 2 sem contrato. Sem mensagens enviadas.
+- Quatro testes existentes de cálculo aprovados, incluindo os 50 cenários admitidos e entradas inválidas. Copy e lógica preservadas nesta revisão.
+- Limites: zoom nativo de 200% e outros navegadores não verificados nesta revisão. Placeholders precisam de imagens aprovadas antes da versão visual definitiva.

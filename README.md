@@ -24,7 +24,7 @@ A página 10 contém uma divergência: título “A Modubras administra” e cor
 
 Tipos de módulo, condição e quantidade do simulador vêm exclusivamente da nova tabela comercial. Conteúdos antigos e programa de parceiros não foram incorporados.
 
-Os sete espaços de imagem (abertura e seis setores) são placeholders, não fotos de ativos reais.
+Os 13 espaços de imagem são placeholders: abertura, três fundamentos, seis setores, módulos, operação e simulador. Círculos nos depoimentos são apenas reservas decorativas. Não são fotos de ativos ou pessoas reais. A direção visual e o mapa de imagens estão em [DESIGN.md](DESIGN.md).
 
 HTML, CSS e JavaScript estáticos, sem dependências. GitHub Pages publica a raiz da branch `main`.
 Prévia local: `python3 -m http.server 4173`.
@@ -33,7 +33,7 @@ Prévia local: `python3 -m http.server 4173`.
 
 Seguir [GRID.md](GRID.md) em toda alteração visual. Revisão com guias: acrescentar `?grid=1` ao endereço da página. A visita normal não carrega o inspetor.
 
-Notas pequenas e asteriscos removidos a pedido do usuário. As condições essenciais foram incorporadas à copy principal; as ressalvas de estimativas seguem junto da tabela, em 16/24 px. Placeholders preservam a descrição acessível sem rótulos visuais.
+Notas pequenas e asteriscos removidos a pedido do usuário. As condições essenciais foram incorporadas à copy principal; as ressalvas de estimativas seguem junto dos cards, em 16/24 px. Placeholders preservam a descrição acessível sem rótulos visuais.
 
 ## Simulador — tabela de novembro de 2026
 
