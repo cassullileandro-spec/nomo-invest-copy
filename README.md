@@ -32,3 +32,5 @@ Prévia local: `python3 -m http.server 4173`.
 ## Regra de layout
 
 Seguir [GRID.md](GRID.md) em toda alteração visual. Revisão com guias: acrescentar `?grid=1` ao endereço da página. A visita normal não carrega o inspetor.
+
+Notas pequenas e asteriscos removidos a pedido do usuário. As condições essenciais foram incorporadas à copy principal; as ressalvas de estimativas seguem junto da tabela, em 16/24 px. Placeholders preservam a descrição acessível sem rótulos visuais.

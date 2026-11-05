@@ -22,7 +22,7 @@ Base dimensional: 4 px; intervalos principais: 8 px. Bordas de 1 px e dimensões
 
 ## Tipografia e controles
 
-Arial/Helvetica preservadas. Papéis explícitos: H1 56/64 px em desktop e 64/72 a partir de 1440, 48/56 no tablet, 40/48 no celular. H2 48/56, 40/48 e 32/40 respectivamente. Títulos de item 24/32. Corpo 16/24, auxiliares 14/24, legendas 12/16.
+Arial/Helvetica preservadas. Papéis explícitos: H1 56/64 px em desktop e 64/72 a partir de 1440, 48/56 no tablet, 40/48 no celular. H2 48/56, 40/48 e 32/40 respectivamente. Títulos de item 24/32. Corpo 16/24 e auxiliares 14/24. Notas em letra miúda foram removidas por solicitação do usuário; não reintroduzir legendas de 12 px. Condições essenciais ficam na copy principal em 16/24.
 
 Botões e CTAs: mínimo externo 40 px, rótulo 14/24, gap 8, padding horizontal 16, borda 1, padding vertical 7, raio 6. No zoom ou caso de quebra legítima, podem crescer; não truncar. Ações empilham conforme largura. O CTA do cabeçalho é omitido abaixo de 600 px para caber com marca e menu; os CTAs do conteúdo permanecem disponíveis.
 
