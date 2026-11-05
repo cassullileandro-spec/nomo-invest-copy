@@ -52,8 +52,9 @@ h1+p,h2+p,h3+p{margin-top:16px}
 .section-intro{max-width:792px}.section-intro>p{max-width:60ch;color:var(--muted)}
 #dinamica{border-top:1px solid var(--line)}
 .model-pillars,.sector-gallery,.quote-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--card-gap);margin-top:var(--collection-space)}
-.model-pillars article{padding:var(--card-padding);border:1px solid var(--line);border-radius:var(--radius)}
-.model-pillars p{color:var(--muted)}
+.model-pillars{row-gap:16px}
+.model-pillars article{display:grid;grid-template-rows:subgrid;grid-row:span 2;row-gap:16px;padding:var(--card-padding);border:1px solid var(--line);border-radius:var(--radius)}
+.model-pillars p{margin:0;color:var(--muted)}
 .model-grid>*,.journey-grid>*,.principles>*,.faq-grid>*{min-width:0}
 .model-grid>:first-child,.journey-grid>:first-child,.principles>:first-child,.faq-grid>:first-child{grid-column:span 5}
 .model-grid>:last-child,.journey-grid>:last-child,.principles>:last-child,.faq-grid>:last-child{grid-column:7 / span 6}
@@ -109,6 +110,8 @@ tbody tr:last-child{background:var(--accent)}tbody tr:last-child th,tbody tr:las
 @media(min-width:1440px){:root{--h1:64px;--h1-line:72px}}
 @media(max-width:1023px){
   :root{--edge:24px;--grid-columns:8;--section-space:80px;--h1:48px;--h1-line:56px;--h2:40px;--h2-line:48px;--header-height:72px}
+  .model-pillars{grid-template-columns:1fr;gap:var(--card-gap)}
+  .model-pillars article{grid-row:auto;grid-template-rows:auto;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:var(--gutter);align-items:start}
   .simulator-fields{grid-template-columns:1fr}
   .nav-cta{margin-left:auto}.menu-toggle{display:inline-flex;order:3;background:#333333;border-color:#6f6f6f;color:var(--white);cursor:pointer}
   .nav nav{display:none;position:absolute;top:var(--header-height);left:0;right:0;background:var(--ink);border-top:1px solid #484848;padding:16px var(--edge);flex-direction:column;align-items:stretch;gap:0}.nav nav a{padding-block:12px}.nav nav.is-open{display:flex}
@@ -126,7 +129,8 @@ tbody tr:last-child{background:var(--accent)}tbody tr:last-child th,tbody tr:las
   .hero{padding-top:40px}.hero-bottom{margin-top:32px;display:grid;grid-template-columns:1fr;gap:16px;padding-block:24px}.hero-bottom a{display:none}
   .hero-layout,.model-grid,.split-heading,.journey-grid,.principles,.faq-grid,.contact-bottom{grid-template-columns:repeat(4,minmax(0,1fr))}
   .model-grid>:first-child,.model-grid>:last-child,.contact-bottom p,.contact-bottom .button{grid-column:1/-1}.model-grid{row-gap:32px}
-  .model-pillars,.module-grid{grid-template-columns:1fr}.contact-bottom .button{justify-self:start}
+  .model-pillars article{grid-template-columns:1fr;row-gap:16px}
+  .module-grid{grid-template-columns:1fr}.contact-bottom .button{justify-self:start}
   .journey-grid,.principles,.faq-grid{row-gap:32px}.steps li{gap:16px}.steps li>div{padding-top:8px}
   .principles-list article,.flow li{gap:16px}.service-grid{grid-template-columns:1fr}
   th,td{padding:16px 8px;font-size:14px;line-height:24px}td{white-space:normal}caption{font-size:20px;line-height:24px}

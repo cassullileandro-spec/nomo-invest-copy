@@ -51,3 +51,9 @@ Copy reescrita para despertar interesse pela apresentação, mantendo o sistema 
 Reutiliza o grid editorial 5/6 colunas e empilha no celular. Seletores nativos de 40 px com texto 16/24 para legibilidade e evitar zoom automático em celulares; rótulos 14/24. Totais 32/40. Condições e limites em 16/24, sem letras miúdas. Conteúdo de resultado tem altura natural. `hidden` sempre retira o elemento da composição, inclusive nos wrappers com grid.
 
 Verificação da revisão editorial e simulador: 31 headings e controles conferidos em 320, 390, 599, 600, 767, 768, 1023, 1024, 1280 e 1440 px, sem overflow ou viúvas e CTAs de 40 px. Interações de tipo, condição, quantidade, situação e menu mobile verificadas. Cálculos: 50 cenários mais limites e entradas inválidas. Zoom nativo e outros navegadores continuam não verificados.
+
+## Refinamento da seção modelo
+
+Versão anterior recuperável: `21133407ba6c3df5302efce69596b3ebdf084984`. O cabeçalho de `#modelo` passa a usar a composição existente de 6/5 colunas, com texto na coluna 8. Cards: três colunas em desktop, com linhas compartilhadas por subgrid para alinhar as descrições. A diferença observada de 32 px entre as descrições em 1024 px foi eliminada. Gap horizontal 24 px e intervalo interno título/texto 16 px, sem alturas fixas.
+
+De 768 a 1023 px, três cards empilhados, cada um com título e descrição lado a lado; abaixo de 768 px, conteúdo em uma coluna. Copy e seção `#dinamica` preservadas. Verificação em 320, 390, 767, 768, 1023, 1024, 1280 e 1440 px: sem overflow ou palavras isoladas no fim dos títulos. Inspeção visual em 390, 768 e 1280 px e guias em 1280 px. Outros navegadores e zoom nativo não foram verificados nesta revisão. Capturas `modelo-grid-*` em `../output/grid/`.
