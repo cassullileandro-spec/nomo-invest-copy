@@ -45,3 +45,9 @@ Validar a página toda, headings, tabela, menu/FAQ e navegação, antes/depois n
 ## Revisão editorial
 
 Copy reescrita para despertar interesse pela apresentação, mantendo o sistema visual. Removidas seções repetitivas `#fundamentos` e `#possibilidades`; estimativa em dois cards, sem comparação entre produtos. Os registros de 40 headings e tabela acima correspondem à versão anterior.
+
+## Simulador
+
+Reutiliza o grid editorial 5/6 colunas e empilha no celular. Seletores nativos de 40 px com texto 16/24 para legibilidade e evitar zoom automático em celulares; rótulos 14/24. Totais 32/40. Condições e limites em 16/24, sem letras miúdas. Conteúdo de resultado tem altura natural. `hidden` sempre retira o elemento da composição, inclusive nos wrappers com grid.
+
+Verificação da revisão editorial e simulador: 31 headings e controles conferidos em 320, 390, 599, 600, 767, 768, 1023, 1024, 1280 e 1440 px, sem overflow ou viúvas e CTAs de 40 px. Interações de tipo, condição, quantidade, situação e menu mobile verificadas. Cálculos: 50 cenários mais limites e entradas inválidas. Zoom nativo e outros navegadores continuam não verificados.
